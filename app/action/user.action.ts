@@ -127,7 +127,7 @@ export async function toggleFollow(targetId: string) {
   if (existingFollow) {
     // if following  unfollow
 
-    const deleteFollow = await prisma.follows.delete({
+     await prisma.follows.delete({
       where: {
         followerId_followingId: {
           followerId: userId,
@@ -162,8 +162,8 @@ export async function toggleFollow(targetId: string) {
   }
 
   catch(error){
-    return {error:false}
-    console.log(`Something went wrong`)
+    console.log(`Something went wrong`,error)
+    return {success:false}
   }
   
 }

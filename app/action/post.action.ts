@@ -98,7 +98,7 @@ export async function toggleLike(postId: string) {
 
     if (exisingLike) {
       //unlike
-      const deleteLikeRecord = await prisma.like.delete({
+       await prisma.like.delete({
         where: {
           userId_postId: {
             userId,

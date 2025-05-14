@@ -1,5 +1,5 @@
 "use client";
-import React, { use, useState } from "react";
+import React, {useState } from "react";
 import { Card, CardContent } from "./ui/card";
 
 import { Avatar, AvatarImage } from "./ui/avatar";
@@ -58,6 +58,7 @@ function PostCard({ post, userId }: { post: Post; userId: string | null }) {
         setNewComment("");
       }
     } catch (error) {
+      console.log("Error creating Commment",error)
       setLikes(post._count.comments);
 
       toast.error("Error creating Commment");

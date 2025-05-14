@@ -26,6 +26,7 @@ function CreatePost() {
         toast.success("Post created successfully");
       }
     } catch (error) {
+      console.log("Something went wrong",error)
       toast.error("Error creating Post");
     } finally {
       setIsPosting(false)

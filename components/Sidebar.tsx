@@ -113,6 +113,3 @@ const UnAuthenticatedSidebar = () => (
 
 export default Sidebar;
 
-function getUserById(id: string) {
-  throw new Error("Function not implemented.");
-}

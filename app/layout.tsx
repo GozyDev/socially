@@ -11,7 +11,7 @@ const poppins = Poppins({ subsets: ["latin"] , weight:["400","700"]});
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <ClerkProvider>
+    <ClerkProvider publishableKey={process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY}>
       <html lang="en" suppressHydrationWarning>
         <body className={poppins.className}>
           <ThemeProvider

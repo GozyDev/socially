@@ -94,7 +94,7 @@ export async function getRandomUser():Promise<Users[] | null>{
           },
         },
       },
-      take: 3,
+      take: 4,
     });
   
     return randomUser;

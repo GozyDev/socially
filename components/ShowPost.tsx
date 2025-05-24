@@ -11,7 +11,7 @@ async function ShowPost() {
     
   return (
     <div className='space-y-5'>
-        {posts.map(post => <PostCard key={post.id} post={post} userId={userId} />)}
+        {posts.map(post => <PostCard key={post.id} post={post} dbUserId={userId} />)}
     </div>
   )
 }

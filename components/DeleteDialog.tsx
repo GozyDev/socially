@@ -46,7 +46,7 @@ function DeleteDialog({
         <AlertDialogFooter>
           <AlertDialogCancel>Cancel</AlertDialogCancel>
           <AlertDialogAction
-            className="bg-red-600 text-white hover:bg-red-500"
+            className="bg-red-500 text-white hover:bg-red-600"
             onClick={async () => await onDelete()}
           >
             {deleting ? "Deleting..." : "Delete"}

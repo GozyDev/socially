@@ -51,15 +51,9 @@ export async function getPost() {
       },
 
       likes: {
-        include: {
-          user: {
-            select: {
-              name: true,
-              username: true,
-              image: true,
-            },
+        select: {
+            userId: true,
           },
-        },
       },
 
       _count: {

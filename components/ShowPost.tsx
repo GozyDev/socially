@@ -16,4 +16,4 @@ async function ShowPost() {
   )
 }
 
-export default ShowPost
+export default ShowPost 

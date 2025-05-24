@@ -56,7 +56,7 @@ export async function getUserByCleckId(clerkId: string) {
 
 export async function getUserId() {
   const { userId } = await auth();
-  if (!userId) throw new Error("Unauthorized");
+  if (!userId) return ''
 
   const user = await getUserByCleckId(userId);
 
